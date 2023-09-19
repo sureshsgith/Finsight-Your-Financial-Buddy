@@ -150,7 +150,7 @@ def app():
     output_parser = CustomOutputParser()
 
     # Initializing ChatOpenAI model
-    llm = ChatOpenAI(model="gpt-4-32k", temperature=0.8)
+    llm = ChatOpenAI(model="gpt-3.5-turbo-16k", temperature=0.8)
 
     # Creating an LLMChain
     llm_chain = LLMChain(llm=llm, prompt=prompt)
